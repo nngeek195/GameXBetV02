@@ -1,0 +1,567 @@
+.highlight{
+    color: red;
+}
+/* Existing styles for reference */
+.locker {
+    position: relative;
+    padding-left: 300px;
+}
+
+.vault-door-outer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: rgb(235, 235, 235);
+    border-radius: 6%;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.vault-door-inner {
+    position: absolute;
+    margin: 52px;
+    width: 390px;
+    height: 390px;
+    background: rgb(219, 219, 219);
+    border-radius: 25%;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vault-door-lock-shadow {
+    position: absolute;
+    width: 340px;
+    height: 180px;
+    background: -webkit-linear-gradient(rgba(160, 160, 160, .2), transparent);
+    margin: 170px 90px;
+    transform: rotate(-45deg);
+    transition: all .05s ease-out;
+}
+
+.vault-door-lock-wrapper {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+}
+
+.vault-door-lock {
+    background: rgb(185, 185, 185);
+}
+
+.vault-door-circle {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    margin: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #e0e0e0, #bdbdbd);
+}
+
+.vault-door-pistons {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    margin: 180px 25px;
+    background: none;
+}
+
+.piston {
+    position: absolute;
+    background: rgb(185, 185, 185);
+    width: 340px;
+    height: 30px;
+    border-radius: 8px;
+    transition: all .05s ease-out;
+}
+
+.piston2 {
+    transform: rotate(45deg);
+}
+
+.piston3 {
+    transform: rotate(90deg);
+}
+
+.piston4 {
+    transform: rotate(135deg);
+}
+
+.vault-door-handle-shadow {
+    position: absolute;
+    background: rgb(160, 160, 160);
+    width: 150px;
+    height: 150px;
+    margin: 120px;
+    border-radius: 50%;
+}
+
+.vault-door-handle-long-shadow {
+    position: absolute;
+    background: -webkit-linear-gradient(rgb(160, 160, 160), transparent);
+    width: 186px;
+    height: 186px;
+    margin: 165px;
+    transform: rotate(-45deg);
+}
+
+.vault-door-handle {
+    position: absolute;
+    border: solid 23px rgb(214, 214, 214);
+    width: 140px;
+    height: 140px;
+    margin: 102px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    background: radial-gradient(circle, #cfd8dc, #b0bec5);
+}
+
+.handle-bar {
+    position: absolute;
+    background: rgb(214, 214, 214);
+    height: 22px;
+    width: 140px;
+    margin: 59px 0;
+}
+
+.bar1 {
+    transform: rotate(45deg);
+}
+
+.bar2 {
+    transform: rotate(135deg);
+}
+
+/* Hover styles */
+.vault-door-outer:hover {
+    background: rgb(200, 200, 200);
+    transform: scale(1.05);
+}
+
+.vault-door-inner:hover {
+    background: rgb(240, 240, 240);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vault-door-lock-shadow:hover {
+    background: -webkit-linear-gradient(rgba(180, 180, 180, .3), transparent);
+}
+
+.piston:hover {
+    background: rgb(200, 200, 200);
+    width: 350px;
+    transition: all .2s ease-out;
+}
+
+.vault-door-handle-shadow:hover {
+    background: rgb(180, 180, 180);
+}
+
+.vault-door-handle-long-shadow:hover {
+    background: -webkit-linear-gradient(rgb(180, 180, 180), transparent);
+}
+
+.vault-door-handle:hover {
+    border-color: rgb(190, 190, 190);
+    background: radial-gradient(circle, #d0d0d0, #b0b0b0);
+    transform: rotate(-180deg);
+}
+
+
+.settings-container {
+    width: 100%;
+}
+
+.vault-door-outer:hover{
+    background-color: rgba(22, 52, 82, 0.653);
+}
+
+.settings-title {
+    color: #0e141b;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 16px 16px 8px;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #f8fafc;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.setting-icon {
+    background-color: #e7edf3;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-text {
+    color: #0e141b;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #e7edf3;
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu p {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+    background-color: #e7edf3;
+}
+
+.logout{
+    
+    width: 100%;
+    max-width: 100px;
+    height: 50px;
+    background-color: #113e53;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.logout:hover{
+    background-color: rgba(197, 29, 85, 0.785);
+}
+.hidden {
+    display: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.wrapper{
+	width: 50%;
+	position: absolute;
+	font-family: 'Roboto';
+    font-size : 4vh;
+    background-color: black;
+}
+.rw-words span{
+	position: absolute;
+    left: 80%;
+    top: 820%;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	/* color: black; */
+    /* background-color:black; */
+}
+.rw-sentence span{
+	color: #444;
+	white-space: nowrap;
+	font-size: 200%;
+	font-weight: normal;
+}
+.rw-words-2 span{
+	animation: rotateWordsSecond 5s linear infinite 0s;
+}
+.rw-words span:nth-child(2) { 
+	animation-delay: 1s; 
+	color: #fff;
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 2s; 
+	color: #fff;	
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 3s; 
+	color: #fff;
+}
+.rw-words span:nth-child(5) { 
+	animation-delay: 4s; 
+	color: #fff;
+}
+.rw-words span:nth-child(6) {  
+	animation-delay: 5s; 
+	color: #fff;
+}
+@keyframes rotateWordsSecond {
+    0% { opacity: 2; animation-timing-function: ease-out; width: 0px; }
+    10% { opacity: 1; width: 20%; }
+	20% { opacity: 1; width: 30%; }
+    27% { opacity: 0; width: 50%; }
+    /* 100% { opacity: 0; } */
+}
+/* Styles for the popup (bank) */
+#bank {
+    display: none;
+}
+
+#bank.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bank .fixed {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent overlay */
+    z-index: 50;
+}
+
+#bank .bg-white {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+#bank .bg-white h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#bank .bg-gray-50 {
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #ddd;
+}
+
+#bank .bg-gray-50 button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bank .bg-gray-50 button#Vault {
+    background-color: #007bff; /* Primary color for the Vault button */
+    color: #fff;
+}
+
+#bank .bg-gray-50 button#Vault:hover {
+    background-color: #0056b3;
+}
+
+#bank .bg-gray-50 button#cancelBtn {
+    background-color: #6c757d; /* Secondary color for the Cancel button */
+    color: #fff;
+}
+
+#bank .bg-gray-50 button#cancelBtn:hover {
+    background-color: #5a6268;
+}
+.slideThree {
+    width: 80px;
+    height: 26px;
+    background: #0c4372;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+    &:after {
+      content: 'OFF';
+      color: #ffffff;
+      position: absolute;
+      right: 10px;
+      z-index: 0;
+      font: 12px/26px Arial, sans-serif;
+      font-weight: bold;
+      text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+    }
+    &:before {
+      content: 'ON';
+      color: greenyellow;
+      
+      position: absolute;
+      left: 10px;
+      z-index: 0;
+      font: 12px/26px Arial, sans-serif;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      width: 34px;
+      height: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      z-index: 1;
+      background: #fcfff4;
+      background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+      border-radius: 50px;
+      transition: all 0.4s ease;
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    }
+    input[type=checkbox] {
+      visibility: hidden;
+      &:checked + label {
+        left: 43px;
+      }
+    }    
+  }
+  :root {
+	--main-bg-color: #fff;
+	--main-text-color: #888888;
+}
+
+[data-theme="dark"] {
+	--main-bg-color: #1e1f26;
+	--main-text-color: #ccc;
+}
+
+* {
+	box-sizing: border-box;
+	/* 		transition: all ease 0.2s; */
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#introduction {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#restart {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}
+
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#youtube,
+#youtube-card {
+  display: none;
+}
+
+@media (min-height: 425px) {
+  /** Youtube logo by https://codepen.io/alvaromontoro */
+  #youtube {
+    z-index: 2;
+    display: block;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: red;
+    border-radius: 50% / 11%;
+    transform: scale(0.8);
+    transition: transform 0.5s;
+  }
+
+  #youtube:hover,
+  #youtube:focus {
+    transform: scale(0.9);
+  }
+
+  #youtube::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7.5%;
+    left: -6%;
+    width: 112%;
+    height: 85%;
+    background: red;
+    border-radius: 9% / 50%;
+  }
+
+  #youtube::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 45px;
+    height: 30px;
+    border: 15px solid transparent;
+    box-sizing: border-box;
+    border-left: 30px solid white;
+  }
+
+  #youtube span {
+    font-size: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #youtube:hover + #youtube-card {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    padding: 25px 25px 25px 130px;
+    width: 300px;
+    background-color: white;
+  }
+}

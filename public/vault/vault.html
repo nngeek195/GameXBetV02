@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+        <title>GamgeXBet</title>
+        <link rel="stylesheet" href="/css/stylesvault.css">
+        <link rel="icon" type="image/x-icon" href="/image/icon.ico" />
+
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+        <div
+            class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
+            style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+            <div class="layout-container flex h-full grow flex-col">
+                <header
+                    class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3">
+                    <div class="flex items-center gap-4 text-black">
+                        <h2
+                            class="text-black text-lg font-bold leading-tight tracking-[-0.015em]">Game<span
+                                class="highlight">X</span>Bet</h2>
+                    </div>
+                    <div class="flex flex-1 justify-end gap-8">
+                        <div class="flex items-center gap-9">
+                            <a
+                                class="text-black text-lg font-bold leading-tight tracking-[-0.015em]"
+                                href="/home/home.html">Home Page</a>
+                            <a
+                                class="text-black text-lg font-bold leading-tight tracking-[-0.015em]"
+                                href="/game/game.html">Bet & Play</a>
+                            <a
+                                class="text-black text-lg font-bold leading-tight tracking-[-0.015em]"
+                                href="/contact/contact.html">Contact</a>
+
+                            <div class="flex gap-1">
+
+                                <a href="/404/404.html">
+                                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#243647] text-black gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                                        <div class="text-white" data-icon="Gift" data-size="20px" data-weight="regular">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                                <path d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </a>
+                                
+                                <a href="/user/user.html">
+                                </div>
+                                <div
+                                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    style='background-image: url("https://johannesippen.com/img/blog/humans-not-users/header.jpg");'></div>
+                            </a></div>
+                    </header>
+                    <div class="px-40 flex flex-1 justify-center py-5">
+                        <div
+                            class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                            <h3
+                                class="text-[#0e141b] tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">Balance</h3>
+                            <div class="flex flex-wrap gap-3 px-4 py-3">
+                                <div
+                                    class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#d0dbe7] p-3 items-center text-center">
+                                    <p
+                                        class="text-[#333] tracking-light text-2xl font-bold leading-tight"><h2 style="color:#333;">Total <span class="price">LKR <span id="balance">00</span><span class="cents">.00</span></span></h2>
+                                    </p>
+                                    <div class="flex items-center gap-2"><p
+                                            class="text-[#4e7397] text-sm font-normal leading-normal">Available</p></div>
+                                </div>
+                            </div>
+                            
+                            <main class="grow overflow-hidden">
+                                <div class="flex h-full flex-col">
+                                    <div class="flex flex-1 flex-col justify-between">
+                                        <div class="p-4 @container">
+                                            <div
+                                                class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-[#d0dbe7] bg-slate-50 p-5 @[480px]:flex-row @[480px]:items-center">
+                                                
+                                                    <div class="flex flex-col gap-1">
+                                                    
+                                                    <p
+                                                        class="text-[#0e141b] text-base font-bold leading-tight">Get
+                                                        paid faster with Instant
+                                                        withdraw</p>
+                                                    <p
+                                                        class="text-[#4e7397] text-base font-normal leading-normal">Transfer
+                                                        your earnings to your debit card
+                                                        instantly for a 1% fee (minimum
+                                                        $0.25,
+                                                        maximum $10).</p>
+                                                
+                                                </div>
+                                                <button id="openPopup1"
+                                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#1980e6] text-slate-50text-lg font-bold leading-tight tracking-[-0.015em]">
+                                                    <span class="truncate">Instant Withdraw</span>
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-[#d0dbe7] bg-slate-50 p-5 @[480px]:flex-row @[480px]:items-center">
+                                                <div class="flex flex-col gap-1">
+                                                    
+                                                    <p
+                                                        class="text-[#0e141b] text-base font-bold leading-tight">Deposite money
+                                                    using any credit or debit cards</p>
+                                                    <p
+                                                        class="text-[#4e7397] text-base font-normal leading-normal">Withing 10 minutes
+                                                        your Transaction will complete.</p>
+                                                    
+                                                </div>
+                                                <button id="openPopup"
+                                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#1980e6] text-slate-50 text-lg font-bold leading-tight tracking-[-0.015em]">
+                                                    <span class="truncate">Quick Deposite</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- Popup Window -->
+                                    <div id="popup" class="popup" style="display:none;">
+                                        <div class="popup-content">
+                                            <span class="close" id="closePopup">&times;</span>
+                                            <section class="content">
+                                                <div class="columns">
+                                                    <div id="sidebar"></div>
+                                                    <div id="semicircle">
+                                                        <svg viewBox="0 0 412 1080" version="1.1"
+                                                             xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <g id="Page-1" stroke="none" stroke-width="1"
+                                                               fill="none" fill-rule="evenodd">
+                                                                <g id="Group" transform="translate(-69.000000, 0.000000)">
+                                                                    <g id="Rectangle-Copy-10" fill-opacity="1">
+                                                                        <use filter="url(#filter-2)"
+                                                                             xlink:href="#path-1"></use>
+                                                                    </g>
+                                                                    <path
+                                                                        d="M0,0 L0,1080 L107.077379,1080 C529.830472,806.915754 563.790352,276.501473 107.077379,8.29024349e-14 L0,0 Z"
+                                                                        id="Path" fill="#000000"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div id="main">
+                                                        <img id="add-card"
+                                                             src="https://storage.googleapis.com/pen-images/creditcard2.png"></img>
+                                                        <img id="main-card"
+                                                             onclick="autoFill();" src="https://storage.googleapis.com/pen-images/creditcard.png"></img>
+                                                        <img id="other-card"
+                                                             src="https://storage.googleapis.com/pen-images/creditcard2.png"></img>
+                                                        <section id="payment">
+                                                            <section class="row" id="total">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32">
+                                                                    <path
+                                                                        d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                                                    </path>
+                                                                </svg>
+                                                                <h2>Maximumly you can deposite LKR 500</h2>
+                                                            </section>
+                                                            <form id="depositForm">
+                                                                <h1>Payment Details</h1>
+                                                                <div class="form-group">
+                                                                    <label for="name">Cardholder Name</label>
+                                                                    <input type="text" class="form-control" id="name"
+                                                                           aria-describedby="nameHelp" placeholder="Name">
+                                                                    <small id="nameHelp"
+                                                                           class="form-text text-muted">Full name as displayed on card.</small>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="number">Card Number</label>
+                                                                    <input type="number" class="form-control" id="number"
+                                                                           placeholder="Card Number">
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <label for="date">Expiry Date</label>
+                                                                        <input type="date" class="form-control" id="date"
+                                                                               placeholder="MM/YYYY">
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label for="cvv">CVV</label>
+                                                                        <input type="password" id="cvv" class="form-control"
+                                                                               placeholder="CVV">
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label for="depositeAmount">Amount</label>
+                                                                        <input type="number" id="depositAmount" class="form-control"
+                                                                               placeholder="Amount of Money">
+                                                                    </div>
+                                                                </div>
+                                                                <button id="checkout" type="button" class="btn">Checkout</button>
+                                                            </form>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    
+                                    <button id="openPopup">Deposit</button>
+                                    </div>
+                                    <div id="popup1" class="popup1">
+                                        <div class="popup1-content">
+                                            <span class="close" id="closePopup1">&times;</span>
+                                            <section class="content">
+                                                <div class="columns">
+                                                    <div id="sidebar"></div>
+                                                    <div id="semicircle">
+                                                        <svg viewBox="0 0 412 1080" version="1.1"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <g id="Page-1" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd">
+                                                                <g id="Group" transform="translate(-69.000000, 0.000000)">
+                                                                    <g id="Rectangle-Copy-10" fill-opacity="1">
+                                                                        <use filter="url(#filter-2)"
+                                                                            xlink:href="#path-1"></use>
+                                                                    </g>
+                                                                    <path
+                                                                        d="M0,0 L0,1080 L107.077379,1080 C529.830472,806.915754 563.790352,276.501473 107.077379,8.29024349e-14 L0,0 Z"
+                                                                        id="Path" fill="#000000"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div id="main">
+                                                        <img id="add-card"
+                                                            src="https://storage.googleapis.com/pen-images/creditcard2.png"></img>
+                                                        <img id="main-card"
+                                                            onClick="autoFill()"; src="https://storage.googleapis.com/pen-images/creditcard.png"></img>
+                                                        <img id="other-card"
+                                                            src="https://storage.googleapis.com/pen-images/creditcard2.png"></img>
+                                                        <section id="payment">
+                                                            <section class="row" id="total">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32">
+                                                                    <path
+                                                                        d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                                                    </path>
+                                                                </svg>
+                                                                <div id="amount">
+                                                                    <h2>Total Amount Can Withdraw</h2>
+                                                                </div>
+                                                            </section>
+                                                            <form>
+                                                                <h1>Payment Details</h1>
+                                                                <div class="form-group">
+                                                                    <label for="name">Cardholder Name</label>
+                                                                    <input type="text" class="form-control" id="name"
+                                                                        aria-describedby="nameHelp" placeholder="Name">
+                                                                    <small id="nameHelp"
+                                                                        class="form-text text-muted">Full name as displayed on card.</small>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="number">Card Number</label>
+                                                                    <input type="number" class="form-control" id="number"
+                                                                        placeholder="Card Number">
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <label for="tel">Your mobile number</label>
+                                                                        <input type="tel" class="form-control" id="text-lg"
+                                                                            placeholder="+94#########">
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label for="contry">Your country</label>
+                                                                        <input type="text" id="country" class="form-control"
+                                                                            placeholder="Country Name">
+                                                                    </div>
+                                                                    <form id="withdrawForm">
+                                                                        <div class="form-group">
+                                                                            <label for="withdrawAmount">Withdrawal Amount</label>
+                                                                            <input type="number" class="form-control" id="withdrawAmount" placeholder="Amount to Withdraw">
+                                                                        </div>
+                                                                        <button id="withdraw" type="button" class="btn">Withdraw</button>
+                                                                    </form>
+                                                                </form>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="payment-animation">
+                                <div class="payment-animation-wrapper">
+                                <div class="bills-container">
+                                  <div class="bill bill-1">$</div>
+                                  <div class="bill bill-2">$</div>
+                                  <div class="bill bill-3">$</div>
+                                  <div class="bill bill-4">$</div>
+                                  <div class="bill bill-5">$</div>
+                                  <div class="bill bill-6">$</div>
+                                 </div>
+                                  <div class="geldspeicher">
+                                   <div class="wall-1-container">
+                                   <div class="wall-1">
+                                     <div class="schild">
+                                       €
+                                     </div>
+                                    </div>
+                                   </div>
+                                    <div class="wall-2-container">
+                                   <div class="wall-2">
+                                    </div>
+                                   </div>
+                                  </div>
+                                  <div class="huegel">
+                                    
+                                  </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <footer
+                        class="border-t border-solid border-t-[#243647] px-2 py-3 text-black text-lg font-bold leading-tight tracking-[-0.015em]">
+                        <p class="text-[#fffff]">© 2024
+                            Game<span class="highlight">X</span>Bet</p>
+                    </footer>
+                <script src="/js/scriptsVault.js"></script>
+        </body>
+    </html>

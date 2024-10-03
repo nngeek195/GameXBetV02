@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" />
+        <link rel="stylesheet" href="css/styleslogin.css">
+        <title>GameXBet</title>
+        <link rel="icon" type="image/x-icon" href="image/icon.ico" />
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h2>Game<span class="highlight">X</span>Bet</h2>
+            </div>
+        </header>
+
+        <div
+            class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden">
+            <div
+                class="animated-background flex flex-1 flex-col items-center justify-center">
+                <div class="bg-image-container text-center">
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <h1
+                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em]"><b>
+                            Welcome to Game<span
+                                class="highlight">X</span>Bet</b>
+                    </h1>
+                    <br><br>
+                    <h2 class="text-white text-sm font-normal leading-normal">
+                        <strong>Play x Enjoy x Win</strong>
+                    </h2>
+                </div>
+                <div class="flex px-4 py-3 justify-center">
+                    <br>
+                    <button
+                        class="scroll-button flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                        onclick="scrollToLogin()">
+                        <span class="truncate">Log in</span>
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#243647] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                        onclick="showSignupPopup()">
+                        <span class="truncate">Sign up</span>
+                    </button>
+                </div>
+
+                <!-- Popup Modal -->
+                <div id="signup-popup" class="popup-overlay"
+                    style="display: none;">
+                    <div class="popup-content">
+                        <span class="close-button"
+                            onclick="hideSignupPopup()">&times;</span>
+                        <h2>Sign Up</h2>
+                        <form id="signup-form" method="POST">
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <p
+                                    class="text-white text-base font-medium leading-normal pb-2">Username</p>
+                                <input
+                                    placeholder="Enter your username"
+                                    type="text"
+                                    id="signup-username"
+                                    class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#344d65] bg-[#1a2632] focus:border-[#344d65] h-14 placeholder:text-[#93adc8] p-[15px] text-base font-normal" />
+                            </label>
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <p
+                                    class="text-white text-base font-medium leading-normal pb-2">Email</p>
+                                <input
+                                    placeholder="Enter your email address"
+                                    type="email"
+                                    id="signup-email"
+                                    class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#344d65] bg-[#1a2632] focus:border-[#344d65] h-14 placeholder:text-[#93adc8] p-[15px] text-base font-normal" />
+                            </label>
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <p
+                                    class="text-white text-base font-medium leading-normal pb-2">Password</p>
+                                <input
+                                    placeholder="Enter your password"
+                                    type="password"
+                                    id="signup-password"
+                                    class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#344d65] bg-[#1a2632] focus:border-[#344d65] h-14 placeholder:text-[#93adc8] p-[15px] text-base font-normal" />
+                            </label>
+                            <button type="submit"
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br>
+                <p
+                    class="text-[#93adc8] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center">or</p>
+
+                <div class="login-section flex px-4 py-3 justify-center"
+                    id="login-section">
+                    <button type="button" class="login-with-google-btn">Log in
+                        with Google</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="login-with-facebook-btn">Log in
+                        with Facebook</button>
+                </div>
+
+                <div class="Log">
+                    <div
+                        class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3 justify-center">
+                        <form id="login-form" method="POST">
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <p
+                                    class="text-white text-base font-medium leading-normal pb-2">Email</p>
+                                <input
+                                    placeholder="Enter your email address"
+                                    type="email"
+                                    id="login-email"
+                                    class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#344d65] bg-[#1a2632] focus:border-[#344d65] h-14 placeholder:text-[#93adc8] p-[15px] text-base font-normal" />
+                            </label>
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <p
+                                    class="text-white text-base font-medium leading-normal pb-2">Password</p>
+                                <input
+                                    placeholder="Enter your password"
+                                    type="password"
+                                    id="login-password"
+                                    class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#344d65] bg-[#1a2632] focus:border-[#344d65] h-14 placeholder:text-[#93adc8] p-[15px] text-base font-normal" />
+                            </label>
+                            <div>
+                                <!-- Forgot your password link -->
+                                <div>
+                                    <p
+                                        class="text-[#93adc8] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">
+                                        Forgot your password?
+                                    </p>
+                                </div>
+                                <!-- Log in button -->
+                                <div class="flex px-4 py-3 justify-center">
+                                    <button type="submit"
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                                        Log in
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/scriptlogin.js"></script>
+        <footer
+            class="border-t border-solid border-t-[#243647] px-10 py-3">
+            <p class="text-[#fffff]">© 2024
+                Game<span class="highlight">X</span>Bet</p>
+        </footer>
+    </body>
+</html>

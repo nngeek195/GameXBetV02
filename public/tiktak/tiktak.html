@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+        <title>GameXBet</title>
+        <link rel="stylesheet" href="/css/stylestak.css">
+        <link rel="icon" type="image/x-icon" href="/image/icon.ico" />
+
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+        <div
+            class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
+            style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+            <div class="layout-container flex h-full grow flex-col">
+                <header
+                    class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3">
+                    <div class="flex items-center gap-4 text-black">
+                        <h2
+                            class="text-black text-lg font-bold leading-tight tracking-[-0.015em]">Game<span
+                                class="highlight">X</span>Bet</h2>
+                    </div>
+                    <div class="flex flex-1 justify-end gap-8">
+                        <div class="flex items-center gap-9">
+                            <a
+                                class="text-black text-lg font-bold leading-tight tracking-[-0.015em]"
+                                href="/home/home.html">Home Page</a>
+                            <a
+                                class="text-black text-lg font-bold leading-tight tracking-[-0.015em]"
+                                href="/game/game.html">Bet & Play</a>
+                            <a
+                                class="text-black text-lg font-bold leading-tight tracking-[-0.015em]"
+                                href="/contact/contact.html">Contact</a>
+
+                            <div class="flex gap-1">
+
+                                <a href="/404/404.html">
+                                    <button
+                                        class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#243647] text-black gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                                        <div class="text-white" data-icon="Gift"
+                                            data-size="20px"
+                                            data-weight="regular">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px" height="20px"
+                                                fill="currentColor"
+                                                viewBox="0 0 256 256">
+                                                <path
+                                                    d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </a>
+
+                                <a href="/user/user.html">
+                                    <div
+                                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                        style='background-image: url("https://johannesippen.com/img/blog/humans-not-users/header.jpg");'>
+                                    </div>
+                                </a>
+                            </div>
+                        </header>
+                        <div class="px-40 flex flex-1 justify-center py-5">
+                            <div
+                                class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                                <h3
+                                    class="text-[#0e141b] tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">Balance</h3>
+                                <div class="flex flex-wrap gap-3 px-4 py-3">
+                                    <div
+                                        class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#d0dbe7] p-3 items-center text-center">
+                                        <p
+                                            class="text-[#333] tracking-light text-2xl font-bold leading-tight"><h2
+                                                style="color:#333;">Total <span
+                                                    class="price">LKR <span
+                                                        id="balance">00</span><span
+                                                        class="cents">.00</span></span></h2>
+                                        </p>
+                                        <div class="flex items-center gap-2"><p
+                                                class="text-[#4e7397] text-sm font-normal leading-normal">Available</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row text-center" id="intro-section">
+                                <h1>Player vs Computer Tic-Tac-Toe</h1>
+                                <h2 class="message">Choose your player:</h2>
+                                <form action="#">
+                                    <fieldset>
+                                        <input type="radio" name="player-choice"
+                                            id="player-choice-1" value="X" />
+                                        <label for="player-choice-1">X</label>
+                                        <input type="radio" name="player-choice"
+                                            id="player-choice-2" value="O" />
+                                        <label for="player-choice-2">O</label>
+                                    </fieldset>
+                                    <button id="reset"
+                                        class="btn btn-primary">Reset</button>
+                                </form>
+                            </div>
+                            <div class="row" id="grid-section">
+                                <ul id="grid"></ul>
+                                <div id="popup">
+                                    <h2>Place Your Bet</h2>
+                                    <form id="bet-form">
+                                        <label for="bet-amount">Bet Amount (Max
+                                            20 LKR):</label>
+                                        <input type="number" id="bet-amount"
+                                            min="1" max="20" value="20">
+                                        <button type="submit">Start
+                                            Game</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="/js/scriptstack.js"></script>
+            <footer
+                class="border-t border-solid border-t-[#243647] px-2 py-3 text-black text-lg font-bold leading-tight tracking-[-0.015em]">
+                <p class="text-[#fffff]">© 2024
+                    Game<span class="highlight">X</span>Bet</p>
+            </footer>
+        </body>
+    </html>

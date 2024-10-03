@@ -1,0 +1,315 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" />
+
+        <title>GameXBet</title>
+        <link rel="stylesheet" href="/css/stylesgame.css">
+        <link rel="icon" type="image/x-icon" href="/image/icon.ico">
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+        <div
+            class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden"
+            style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+            <div class="layout-container flex h-full grow flex-col">
+                <header
+                    class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#243647] px-10 py-3">
+                    <div class="flex items-center gap-4 text-white">
+                        <h2
+                            class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Game<span
+                                class="highlight">X</span>Bet</h2>
+                    </div>
+                    <div class="flex flex-1 justify-end gap-8">
+                        <div class="flex items-center gap-9">
+                            <a
+                                class="text-white text-sm font-medium leading-normal"
+                                href="/home/home.html">Home</a>
+                            <a
+                                class="text-white text-sm font-medium leading-normal"
+                                href="/vault/vault.html">Vault</a>
+                            <a
+                                class="text-white text-sm font-medium leading-normal"
+                                href="/contact/contact.html">Contact</a>
+
+                            <div class="flex gap-1">
+
+                                <a href="/404/404.html">
+                                    <button
+                                        class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#243647] text-black gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                                        <div class="text-white" data-icon="Gift"
+                                            data-size="20px"
+                                            data-weight="regular">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20px" height="20px"
+                                                fill="currentColor"
+                                                viewBox="0 0 256 256">
+                                                <path
+                                                    d="M216,72H180.92c.39-.33.79-.65,1.17-1A29.53,29.53,0,0,0,192,49.57,32.62,32.62,0,0,0,158.44,16,29.53,29.53,0,0,0,137,25.91a54.94,54.94,0,0,0-9,14.48,54.94,54.94,0,0,0-9-14.48A29.53,29.53,0,0,0,97.56,16,32.62,32.62,0,0,0,64,49.57,29.53,29.53,0,0,0,73.91,71c.38.33.78.65,1.17,1H40A16,16,0,0,0,24,88v32a16,16,0,0,0,16,16v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V136a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM149,36.51a13.69,13.69,0,0,1,10-4.5h.49A16.62,16.62,0,0,1,176,49.08a13.69,13.69,0,0,1-4.5,10c-9.49,8.4-25.24,11.36-35,12.4C137.7,60.89,141,45.5,149,36.51Zm-64.09.36A16.63,16.63,0,0,1,96.59,32h.49a13.69,13.69,0,0,1,10,4.5c8.39,9.48,11.35,25.2,12.39,34.92-9.72-1-25.44-4-34.92-12.39a13.69,13.69,0,0,1-4.5-10A16.6,16.6,0,0,1,84.87,36.87ZM40,88h80v32H40Zm16,48h64v64H56Zm144,64H136V136h64Zm16-80H136V88h80v32Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </a>
+                                <a href="/user/user.html">
+                                    <div
+                                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                        style='background-image: url("https://johannesippen.com/img/blog/humans-not-users/header.jpg");'>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="px-40 flex flex-1 justify-center py-5">
+                    <div
+                        class="layout-content-container flex flex-col max-w-[960px] h-[100px] flex-1">
+                        <div class="px-4 py-3"
+                            style='background-image: url("/image/cod.jpg");'>
+                            <div class="flex flex-wrap gap-3 px-4 py-3">
+                                <div
+                                    class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#fff] p-3 items-center text-center">
+                                    <p
+                                        class="text-[#333] tracking-light text-xl font-bold leading-tight"><h1
+                                            style="color:#ffffff;">Total
+                                            <span class="price">LKR
+                                                <span
+                                                    id="balance">00</span><span
+                                                    class="cents">.00</span></span></h1>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-3">
+                            <div
+                                class="flex border-b border-[#344d65] px-4 gap-8">
+                                <a
+                                    class="flex flex-col items-center justify-center border-b-[3px] border-b-[#1980e6] text-white pb-[13px] pt-4"
+                                    href="#">
+                                    <p
+                                        class="text-white text-sm font-bold leading-normal tracking-[0.015em]">All
+                                        Games</p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div id="games-container"
+                            class="games-container">
+                            <div id="game1" class="game-item">
+                                <a href="/tiktak/tiktak.html">
+                                    <div class="detail">
+                                        <div class="section">
+                                            <img
+                                                src="https://i.etsystatic.com/50011045/r/il/260f8a/5916277149/il_fullxfull.5916277149_51g6.jpg"
+                                                alt="tik tak toe">
+                                            <div class="content">
+                                                <h2><b>Player vs
+                                                        Computer</b></h2>
+                                                <p>Maximum bet is LKR
+                                                    20</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="game-title">Tik Tak Toe</p>
+                                </div>
+                            </div>
+                            <div id="game1" class="game-item">
+                                <a
+                                    href="/chess/1/chess.html">
+                                    <div class="detail">
+                                        <div class="section">
+                                            <img
+                                                src="https://i.pinimg.com/originals/ed/b8/81/edb881d04cd386a0fd1487a82a5fe934.jpg"
+                                                alt="chess">
+                                            <div class="content">
+                                                <h2><b>Player vs
+                                                        Computer</b></h2>
+                                                <p>Maximum bet is LKR
+                                                    5000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="game-title">Chesss</p>
+                                </div>
+                            </div>
+                            <!-- Repeat similarly for other games with unique IDs -->
+                        </div>
+                        <div id="games-container"
+                            class="games-container">
+                            <div id="game1" class="game-item">
+                                <a
+                                    href="/memory/memory.html">
+                                    <div class="detail">
+                                        <div class="section">
+                                            <img
+                                                src="https://store-images.s-microsoft.com/image/apps.54588.14090654178473619.aa2706f7-9244-4d37-b59f-3f87f7589476.6a5a6db1-70ba-4b57-a879-7f9264cd3a40?mode=scale&q=90&h=1080&w=1920"
+                                                alt="Memory">
+                                            <div class="content">
+                                                <h2><b>Single Player
+                                                        Game</b></h2>
+                                                <p>Free</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="game-title">Memory Game</p>
+                                </div>
+                            </div>
+                            <div id="game1" class="game-item">
+                                <a
+                                    href="/rock/rock.html">
+                                    <div class="detail">
+                                        <div class="section">
+                                            <img
+                                                src="https://img.freepik.com/free-vector/rock-paper-scissors-banner_107791-8387.jpg"
+                                                alt="sissor-paper-rock">
+                                            <div class="content">
+                                                <h2><b>Player vs
+                                                        Computure</b></h2>
+                                                <p>Maximum bet is LKR
+                                                    50</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="game-title">Rock Paper Sissor</p>
+                                </div>
+                            </div>
+                            <!-- Repeat similarly for other games with unique IDs -->
+                        </div>
+                        <!-- next we display upcomming games -->
+                        <div class="pb-3">
+                            <div
+                                class="flex border-b border-[#344d65] px-4 gap-8">
+                                <a
+                                    class="flex flex-col items-center justify-center border-b-[3px] border-b-[#1980e6] text-white pb-[13px] pt-4"
+                                    href="#">
+                                    <p
+                                        class="text-white text-sm font-bold leading-normal tracking-[0.015em]">Upcoming
+                                        Games</p>
+                                </a>
+
+                            </div>
+                            <div id="games-container"
+                                class="games-container">
+                                <div id="game1" class="game-item">
+                                    <div
+                                        class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://d13ms5efar3wc5.cloudfront.net/eyJidWNrZXQiOiJpbWFnZXMtY2Fycnkxc3QtcHJvZHVjdHMiLCJrZXkiOiI2NWY3YzgxZi0yNDQxLTRhZGYtODMyMS1hOTY4ODM3NGU1MzEucG5nLndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDB9fSwid2VicCI6e319"
+                                                alt="sissor-paper-rock">
+                                            <div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Free
+                                                    Fire</p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://play-lh.googleusercontent.com/aqwlSq1dxP7yckP1a8buVBPmrn9oL7ySubITsoOxrTbAUhv6fQyrNZCXYSDYenf5Kcs=w240-h480-rw"
+                                                alt="sissor-paper-rock"><div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Call
+                                                    Of Duty</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzWffaDK1xJU0lYFR7kCZZyHwYCsVpe_V46Q&s"
+                                                alt="sissor-paper-rock"><div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">PUBG</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://s.cafebazaar.ir/images/icons/com.appsomniacs.da2-6ee43f60-da8c-4a8c-ac44-9dac8145a30b_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize"
+                                                alt="sissor-paper-rock"><div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Mini
+                                                    Miltia</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvhh5OY0RpucgVp575MNFWjcgiZyNDiOC2fzT5izNRBY7r2lKxZgopOglSGpli0HUWOJE&usqp=CAU"
+                                                alt="sissor-paper-rock"> <div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Amoung
+                                                    Us</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://static-cdn.jtvnw.net/ttv-boxart/33214-272x380.jpg"
+                                                alt="sissor-paper-rock"><div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Fortnite</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://yt3.googleusercontent.com/sKnSDOlMiUodnrAS1mBy61M7WqvgplLAzlmAox29S_fw9r6f04VAH-GF7jO8x_PDAx0WkDKD=s900-c-k-c0x00ffffff-no-rj"
+                                                alt="sissor-paper-rock"> <div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Clash
+                                                    Of Clans</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png"
+                                                alt="sissor-paper-rock"><div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Halo
+                                                    Infinite</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://assets-prd.ignimgs.com/2023/02/16/apexrevelry-1676588335122.jpg"
+                                                alt="sissor-paper-rock"><div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Apex
+                                                    Legends</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-3 pb-3">
+                                            <img
+                                                src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/CS2_Cover_Art.jpg/220px-CS2_Cover_Art.jpg"
+                                                alt="sissor-paper-rock"><div>
+                                                <p
+                                                    class="text-white text-base font-medium leading-normal">Counter-Strike
+                                                    2</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer
+                                class="border-t border-solid border-t-[#243647] px-10 py-3">
+                                <p class="text-[#fff]">© 2024
+                                    Game<span class="highlight">X</span>Bet</p>
+                            </footer>
+                            <script src="/js/scriptsgame.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>

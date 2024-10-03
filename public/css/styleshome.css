@@ -1,0 +1,219 @@
+:root {
+    --primary-color: #c8dc71;
+    --gradient-color: linear-gradient(180deg, #d2ff00 0%, #00d2ff 100%);
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #ffffff;
+    margin: 0%;
+}
+  
+.word-ani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+  
+/* Custom */
+  
+h1 {
+    color: #008cff;
+    background: -webkit-linear-gradient(25deg, #3a62ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0 solid;
+    animation: type 5s steps(90) infinite normal both, cursor 1s step-end infinite;
+    position: relative;
+}
+  
+@keyframes type {
+    0% {
+        width: 0%;
+    }
+  
+    70%, 100% {
+        width: 100%;
+    }
+}
+  
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+  .highlight{
+    color: red;
+}
+:root {
+    --gap: 4rem;
+  }
+  
+  body {
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .marquee {
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    gap: var(--gap);
+    transform: rotate(0deg);
+  }
+  
+  ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: marquee 40s linear infinite;
+  }
+  
+  .text {
+    background: linear-gradient(to right, rgba(13, 1, 255, 0.55), rgba(190, 189, 240, 0.55), rgba(248, 0, 0, 0.55));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 100;
+    font-size: 10ch;
+    font-style: Cursive;
+    text-transform: uppercase;
+}
+  
+  @keyframes marquee {
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust the spacing between sections */
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Style for each section */
+.section {
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    height: 200px; /* Set a fixed height for the image */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Style for the image */
+.section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Style for the content */
+.section .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Show content on hover */
+.section:hover .content {
+    opacity: 1;
+}
+  
+.social .flex img {
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.social .flex img:hover {
+    filter: brightness(10); /* Increase brightness on hover */
+}
+
+.glitch {
+    line-height: 2;
+    position: relative;
+}
+
+.glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    color: red;
+    /* text-shadow: 2px 0 0 blue, -2px 0 0 lime; */
+    animation: glitch .7s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+        text-shadow: 3px 0 0 blue, -3px 0 0 lime;
+    }
+    20% {
+        clip-path: polygon(20% 20%, 80% 20%, 80% 80%, 20% 80%);
+        text-shadow: 1px 0 0 blue, -1px 0 0 lime;
+    }
+    40% {
+        clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+        text-shadow: 2px 0 0 blue, -2px 0 0 lime;
+    }
+    60% {
+        clip-path: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
+        text-shadow: 3px 0 0 blue, -3px 0 0 lime;
+    }
+    80% {
+        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+        text-shadow: 2px 0 0 blue, -2px 0 0 lime;
+    }
+    100% {
+        clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+        text-shadow: 1px 0 0 blue, -1px 0 0 lime;
+    }
+}
+.gli{
+    font-size: 32px !important;
+    
+}

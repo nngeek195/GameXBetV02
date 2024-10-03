@@ -1,0 +1,206 @@
+.highlight{
+    color: red;
+}
+body {
+    background-color: #111a22;
+}
+/* Highlighted section styling */
+.highlighted-section {
+    background-color: rgb(3, 13, 33); /* Semi-transparent dark background */
+    border-radius: 20px;
+    padding: 20px; /* Adjust padding to fit your design */
+    margin: 20px auto; /* Center the section and add margin */
+    width: 70%;
+    height: 450px; /* Adjust width as needed */
+    max-width: 800px; /* Limit maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for emphasis */
+}
+
+/* Popup title */
+.highlighted-section h2 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    color: #ffffff;
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Grid layout for the form */
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr;
+    gap: 1rem; /* Adjust gap between items */
+}
+
+@media (min-width: 640px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Form labels */
+.label {
+    display: block;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 800; /* font-semibold */
+    color: #ffffff;
+    margin-bottom: 0.5rem; /* mb-2.5 */
+}
+
+/* Form inputs */
+.input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem; /* Adjust padding inside inputs */
+    border: 1px solid #243647;
+    border-radius: 10px !important; /* rounded-md */
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input:focus {
+    outline: none;
+    border-color: #1980e6; /* focus:ring-indigo-600 */
+    box-shadow: 0 0 0 2px rgba(25, 128, 230, 0.3); /* focus:ring-inset focus:ring-indigo-600 */
+}
+
+/* Submit button */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px !important; /* rounded-md */
+    background-color: #134d8f;
+    color: #ffffff;
+    font-weight:500; /* font-semibold */
+    cursor: pointer;
+    margin-top: 1rem; /* Add margin-top to the button */
+}
+
+.submit-button:hover {
+    background-color: #1980e6;
+}
+body {
+    font-family: 'Europa', sans-serif;
+    background-color: black;
+    height: 900px !important;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3em !important;
+    font-weight: 150;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.glitch {
+    line-height: 2;
+    position: relative;
+}
+
+.glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    color: red;
+    /* text-shadow: 2px 0 0 blue, -2px 0 0 lime; */
+    animation: glitch .7s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+        text-shadow: 3px 0 0 blue, -3px 0 0 lime;
+    }
+    20% {
+        clip-path: polygon(20% 20%, 80% 20%, 80% 80%, 20% 80%);
+        text-shadow: 1px 0 0 blue, -1px 0 0 lime;
+    }
+    40% {
+        clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+        text-shadow: 2px 0 0 blue, -2px 0 0 lime;
+    }
+    60% {
+        clip-path: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
+        text-shadow: 3px 0 0 blue, -3px 0 0 lime;
+    }
+    80% {
+        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+        text-shadow: 2px 0 0 blue, -2px 0 0 lime;
+    }
+    100% {
+        clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+        text-shadow: 1px 0 0 blue, -1px 0 0 lime;
+    }
+}
+#openpopup {
+    display: none; /* Hide the popup by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.data-saved-successfully {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .checkmark {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  
+  .message {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #fff;
+    background-color: #4caf50;
+  }
+  .data-saved-successfully {
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translate(-50%, -100%);
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }
+footer{
+    max-height: 40px !important;
+}

@@ -1,0 +1,232 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: "Comfortaa", sans-serif;
+    font-size: larger !important;
+  }
+  
+  h1 {
+    font-family: "Lobster", serif;
+  }
+  
+  .message {
+    color: #fff;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+  
+  form {
+    label {
+      font-size: 4em;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+    input[type=radio] {
+      margin: 1em;
+      cursor: pointer;
+    }
+    fieldset {
+      display: block;
+      opacity: 1;
+      transition: all ease 1s;  
+    }
+    &.game-on fieldset {
+      opacity: 0;
+      display: none;
+    }    
+    &.game-on button {
+      opacity: 1;
+      display: block;
+      margin: 0 auto;
+    }
+   
+  }
+  
+  #grid-section {
+    margin: 3em 0;
+  }
+  
+  #grid {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  li {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    font-size: 3em;
+    text-align: center;
+    padding: .5em;
+  }
+  
+  #c1, #c2, #c3 {
+    border-top: none;
+  }
+  
+  #c3, #c6, #c9 {
+    border-right: none;
+  }
+  
+  #c7, #c8, #c9 {
+    border-bottom: none;
+  }
+  
+  #c1, #c4, #c7 {
+    border-left: none;
+  }
+  
+  .winner {
+    color: #9AE1E5;
+  }
+  
+  .btn-primary, 
+  .btn-primary:focus {
+    background-color: #33B7A5;
+    opacity: 0;
+    outline: 0;  
+    transition: all ease .3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4C2F39;
+  }
+.highlight{
+    color: red;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Grid styles */
+#grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+#grid li {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#grid li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.winner {
+  background: #28a745;
+  color: white;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+/* Popup styles */
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#popup.show {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+#popup h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+#popup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#popup label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#popup input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#popup input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#popup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#popup button:hover {
+  background-color: #0056b3;
+}
+
+#popup button:active {
+  transform: scale(0.98);
+}

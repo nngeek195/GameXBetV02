@@ -1,0 +1,125 @@
+.highlight{
+    color: red;
+}
+/* Container Styling */
+#games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Individual Game Item Styling */
+.game-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Game Image Styling */
+.game-image {
+    width: 100%;
+    aspect-ratio: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+/* Text Styling */
+.game-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.game-provider, .game-price {
+    color: #93adc8;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+
+h1 {
+    font-size: 4em !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: rgb(16, 171, 127) !important;
+    text-transform: uppercase;
+    text-shadow: #9900ff 2px 3px 3px !important;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 0.5s steps(2) infinite !important;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust the spacing between sections */
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Style for each section */
+.section {
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    height: 200px; /* Set a fixed height for the image */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Style for the image */
+.section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Style for the content */
+.section .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Show content on hover */
+.section:hover .content {
+    opacity: 1;
+}
+  
+.social .flex img {
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.social .flex img:hover {
+    filter: brightness(10); /* Increase brightness on hover */
+}
