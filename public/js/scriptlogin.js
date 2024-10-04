@@ -72,7 +72,7 @@ function handleLogin(event) {
         localStorage.setItem('profileName', userData.username);
 
         // Redirect to user.html if login is successful
-        window.location.href = "/user/user.html";
+        window.location.href = "user.html";
     } else {
         alert("Incorrect password. Please try again.");
     }
